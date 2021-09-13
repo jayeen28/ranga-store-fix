@@ -22,6 +22,10 @@ input#form1 {
   margin: auto;
   justify-content: center;
 }
+#card{
+  border: 1px solid rgb(0 0 0 / 23%);
+  box-shadow: #000000c7 0px 0px 5px;
+}
 .card-img-top{
   height: 310px;
 }
@@ -36,10 +40,10 @@ input#form1 {
 }
 .product {
   margin: 12px;
-  padding: 4px;
-  box-shadow: #e05746 0px 0px 5px;
+  padding: 8px;
+  box-shadow: #bf3727 0px 0px 6px;
   border-radius: 10px;
-  border: 1px solid #CB2510;
+  border: 2px solid #CB2510;
 }
 .product-image {
   width: 150px;

@@ -15,7 +15,7 @@ const showProducts = (products) => {
     div.classList.add("product");
     div.innerHTML =
       `
-      <div class="card" style="height:100%">
+      <div class="card" id="card" style="height:100%">
       <img src="${image}" class="card-img-top" alt="No Image Found">
       <div class="card-body">
         <h5 class="card-title">${product.title}</h5>
@@ -49,17 +49,16 @@ const setInnerText = (id, value) => {
 //count added products to cart
 let count = 0;
 const addToCart = (id, price) => {
+  console.log(id);
   count = count + 1;
-  updatePrice("price", price);
-
-  updateTaxAndCharge();
   document.getElementById("total-Products").innerText = count;
+  updatePrice("price", price);
+  updateTaxAndCharge();
   updateTotal();
 };
 
 // main price update function
 const updatePrice = (id, value) => {
-
   const getOldPrice = getInputValue(id);
   const convertedOldPrice = parseFloat(getOldPrice);
   const convertPrice = parseFloat(value);
@@ -97,5 +96,4 @@ const updateTotal = () => {
   const correctGrandTotal = parseFloat(grandTotal).toFixed(2);
   document.getElementById("total").innerText = correctGrandTotal;
 };
-
 loadProducts();
