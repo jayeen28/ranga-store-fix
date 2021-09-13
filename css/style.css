@@ -44,7 +44,7 @@ input#form1 {
 .product {
   margin: 12px;
   padding: 8px;
-  box-shadow: #bf3727 0px 0px 4.5px;
+  box-shadow: #bf3727 0px 0px 4px;
   border-radius: 10px;
   border: 2px solid #CB2510;
   background-color: white;
