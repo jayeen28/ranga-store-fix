@@ -15,16 +15,16 @@ const showProducts = (products) => {
     div.classList.add("product");
     div.innerHTML =
       `
-      <div class="card" id="card" style="height:100%">
-      <img src="${image}" class="card-img-top" alt="No Image Found">
-      <div class="card-body">
-        <h5 class="card-title">${product.title}</h5>
+      <div class="card text-white" id="card" style="height:100%">
+      <img src="${image}" class="card-img-top rounded" alt="No Image Found">
+      <div class="card-body" id="card-body">
+        <h6 class="card-title">${product.title}</h6>
         <p class="card-text">Category: ${product.category}</p>
         <div class="rating">
             <div>People rated: ${numberOfPeopleRated}</div>
             <div>Average rating: ${avgRating}</div>
         </div>
-        <h2>Price: $ ${product.price}</h2>
+        <h4>Price: $ ${product.price}</h4>
         <div class="buttons">
             <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn">add to cart</button>
             <button id="details-btn" class="btn">Details</button>

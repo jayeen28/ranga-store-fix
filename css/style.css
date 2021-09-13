@@ -1,20 +1,24 @@
 #body{
-  background-color: #f1f1f1;
+  background-color: #080707;
 }
 body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
-
+.brand-name{
+  color:white;
+}
 input#form1 {
-  border: 1px solid #CB2510;
+  border: 1px solid #C23422;
+  box-shadow: #bf3727 0px 0px 4px;
   border-radius: 10px 0px 0px 10px;
 }
 #search-button {
   background-color: #c34131;
   color: white;
   border-radius: 0px 10px 10px 0px;
-  border: 1px solid #c34131;
+  border: 1px solid #C23422;
+  box-shadow: #bf3727 0px 0px 4px;
 }
 #all-products {
   display: grid;
@@ -26,8 +30,15 @@ input#form1 {
   justify-content: center;
 }
 #card{
-  border: 1px solid rgb(0 0 0 / 23%);
   box-shadow: #000000c7 0px 0px 5px;
+  border: 0px;
+  padding: 10px;
+  background-color: #151515;
+}
+#card-body{
+  background-color: #151515;
+  padding: 10px;
+  padding: 6px 0px 5px 8px;
 }
 .card-img-top{
   height: 310px;
@@ -44,10 +55,10 @@ input#form1 {
 .product {
   margin: 12px;
   padding: 8px;
-  box-shadow: #bf3727 0px 0px 4px;
   border-radius: 10px;
-  border: 2px solid #CB2510;
-  background-color: white;
+  border: 1px solid #C23422;
+  box-shadow: #bf3727 0px 0px 4px;
+  background-color: #151515;
 }
 .product-image {
   width: 150px;
@@ -64,12 +75,15 @@ input#form1 {
   justify-content: space-between;
   text-align: left;
 }
+#my-cart{
+  background-color: #151515;
+}
 .cart {
   width: 350px;
   /* border: 1px solid green; */
   padding: 10px;
   border: 1px solid #CB2510;
-  box-shadow: 10px 10px 20px #e05746;
+  box-shadow: #e057468f 10px 4px 11px;
   border-radius: 5px;
   margin-right: 30px;
   position: fixed;
