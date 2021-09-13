@@ -1,3 +1,6 @@
+#body{
+  background-color: #f1f1f1;
+}
 body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
@@ -41,9 +44,10 @@ input#form1 {
 .product {
   margin: 12px;
   padding: 8px;
-  box-shadow: #bf3727 0px 0px 6px;
+  box-shadow: #bf3727 0px 0px 4.5px;
   border-radius: 10px;
   border: 2px solid #CB2510;
+  background-color: white;
 }
 .product-image {
   width: 150px;
