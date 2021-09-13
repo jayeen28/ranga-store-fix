@@ -49,7 +49,6 @@ const setInnerText = (id, value) => {
 //count added products to cart
 let count = 0;
 const addToCart = (id, price) => {
-  console.log(id);
   count = count + 1;
   document.getElementById("total-Products").innerText = count;
   updatePrice("price", price);
